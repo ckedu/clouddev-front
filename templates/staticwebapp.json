@@ -12,7 +12,7 @@
         {
             "type": "Microsoft.Web/staticSites",
             "apiVersion": "2022-03-01",
-            "name": "StaticWebApp",
+            "name": "swa-cloudev-ck",
             "location": "Central US",
             "sku": {
                 "name": "Free",
