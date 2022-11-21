@@ -1,0 +1,21 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  createserver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Template
+        uses: actions/checkout@main
+
+      - name: Login
+        uses: azure/login@v1
+        with:
+          creds: $({secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_FOREST_0E1FD3A10})
+
+      - name: Deploy
+        uses: azure/arm-deploy@v1
+        with:
+          subscriptionId: 18038071-b88f-4357-b6e3-f8f7712c46c8
+          resourceGroupName: rg-clouddev-ckesh
+          template: ../templates/staticwebapp.json
