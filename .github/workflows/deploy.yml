@@ -11,7 +11,7 @@ jobs:
       - name: Login
         uses: azure/login@v1
         with:
-          creds: $({secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_FOREST_0E1FD3A10})
+          creds: $({secrets.AZURE_CREDS})
 
       - name: Deploy
         uses: azure/arm-deploy@v1
