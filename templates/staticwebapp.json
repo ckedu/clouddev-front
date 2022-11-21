@@ -2,8 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "staticSites_swa_cloudev_ckesh1_name": {
-            "defaultValue": "swa-cloudev-ckesh1",
+        "staticSites_swa_cloudev_ck_name": {
+            "defaultValue": "swa-cloudev-ck",
             "type": "String"
         }
     },
@@ -12,7 +12,7 @@
         {
             "type": "Microsoft.Web/staticSites",
             "apiVersion": "2022-03-01",
-            "name": "WebApp",
+            "name": "StaticWebApp",
             "location": "Central US",
             "sku": {
                 "name": "Free",
