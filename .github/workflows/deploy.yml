@@ -18,4 +18,4 @@ jobs:
         with:
           subscriptionId: 18038071-b88f-4357-b6e3-f8f7712c46c8
           resourceGroupName: rg-clouddev-ckesh
-          template: ../templates/staticwebapp.json
+          template: ../template/staticwebapp.json
